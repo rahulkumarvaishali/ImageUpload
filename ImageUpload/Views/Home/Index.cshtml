@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <div class="col-lg-10">
+        @using (Html.BeginForm("Index", "Home", FormMethod.Post, new {@enctype="multipart/form-data"}))
+            {
+                <input type="file" name="file"/>
+                <br>
+            <input type="submit"value="Save"/>
+            }
+    </div>
+
+</div>
